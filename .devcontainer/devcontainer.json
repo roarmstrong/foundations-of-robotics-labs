@@ -1,0 +1,18 @@
+{
+    "name": "noetic ros-robot",
+    "dockerFile": "Dockerfile",
+    "remoteUser": "vscode",
+    "context": "..",
+    "containerEnv": {
+        "DISPLAY": "${localEnv:DISPLAY}"
+    },
+    "runArgs": [
+        "--privileged",
+        "--network=host"
+    ],
+    "workspaceMount": "source=${localWorkspaceFolder},target=/${localWorkspaceFolderBasename},type=bind",
+    "workspaceFolder": "/${localWorkspaceFolderBasename}",
+    "mounts": [
+        "source=${localEnv:HOME}${localEnv:USERPROFILE}/.bash_history,target=/home/vscode/.bash_history,type=bind"
+    ]
+}
