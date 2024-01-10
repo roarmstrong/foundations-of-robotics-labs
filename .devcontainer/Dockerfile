@@ -47,9 +47,3 @@ RUN echo "source /opt/ros/${ROS_DISTRO}/setup.bash" >> ~/.bashrc
 # set up jupyter notebook infrastructure
 # make python environment
 RUN python3 -m pip install --upgrade pip
-RUN python3 -m venv ~/.venv
-RUN echo "source ~/.venv/bin/activate" >> ~/.bashrc
-
-# pip requirements
-COPY requirements.txt /tmp/requirements.txt
-# RUN /bin/bash -c "source /opt/ros/${ROS_DISTRO}/setup.bash && source ~/.venv/bin/activate && pip install -r /tmp/requirements.txt"

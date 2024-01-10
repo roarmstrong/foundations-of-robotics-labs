@@ -14,5 +14,6 @@
     "workspaceFolder": "/${localWorkspaceFolderBasename}",
     "mounts": [
         "source=${localEnv:HOME}${localEnv:USERPROFILE}/.bash_history,target=/home/vscode/.bash_history,type=bind"
-    ]
+    ],
+    "postCreateCommand": "/bin/bash -c 'source /opt/ros/${ROS_DISTRO}/setup.bash && python3 -m venv .venv && source .venv/bin/activate && pip install -r requirements.txt'"
 }

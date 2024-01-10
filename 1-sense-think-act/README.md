@@ -6,14 +6,14 @@ Sense Think Act is a common paradigm in robotics. It is a way to think about the
 
 ## Files details
 
-### Analyse1
+### 01-getting-started.ipynb
 
-Notebook to read the data from a rosbag and extract the mean and variance from the circle.
+Getting started notebook. This notebook will help you get started with the project. It will also help you get familiar with the tools you will be using in the project.
 
-### Project1-2
+### 02-rospy-snippets.ipynb
 
-Notebook for the inverse kinematics of the Dingo.
+This notebook contains some useful snippets for using `rospy`. It is a good reference for using `rospy`.
 
-### Project1-3
+### 03-sta-assigment.ipynb
 
-Notebook to make the Dingo move in a circle and save a rosbag from the trajectory.
+The lab assignment. This is the notebook you will be working on. It contains the instructions for the assignment.
