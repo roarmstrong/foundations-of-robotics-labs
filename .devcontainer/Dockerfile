@@ -18,7 +18,8 @@ RUN apt-get install -y \
     wget \
     git \
     python3-pip \
-    python3-venv
+    python3-venv \
+    ros-noetic-navigation
 
 # Add vscode user with same UID and GID as your host system
 # (copied from https://code.visualstudio.com/remote/advancedcontainers/add-nonroot-user#_creating-a-nonroot-user)
@@ -47,3 +48,9 @@ RUN echo "source /opt/ros/${ROS_DISTRO}/setup.bash" >> ~/.bashrc
 # set up jupyter notebook infrastructure
 # make python environment
 RUN python3 -m pip install --upgrade pip
+
+# make workspace
+RUN mkdir -p /home/$USERNAME/ws
+
+# default workspace
+WORKDIR /home/$USERNAME/ws

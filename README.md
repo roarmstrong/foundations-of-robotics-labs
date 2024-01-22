@@ -11,7 +11,7 @@ These Python Jupyter notebooks are designed for academic teaching laboratories i
 The notebooks are designed to be used with a ROS workspace that contains the following packages:
 
 - [Sphero RVR ROS](<https://github.com/Foundations-of-Robotics/mobile_manip_ws>) - ROS packages for the Sphero RVR
-- [Kinova Gen3 ROS](<>) - ROS packages for the Kinova Gen3
+- [Kinova Gen3 lite ROS](<>) - ROS packages for the Kinova Gen3 lite
 - [mobile manipulator workspace](<https://github.com/Foundations-of-Robotics/mobile_manip_ws>)
 
 ## Projects
@@ -19,7 +19,7 @@ The notebooks are designed to be used with a ROS workspace that contains the fol
 - [**Project 0 - Primers**](<./0-primers/>) - Primers on Python, the terminal, and ROS
 - [**Project 1 - Sense -> Think -> Act**](<./Project1/>) - Feedback & Robotic algorithm fundamentals
 - [**Project 2 - Perception, Filters, and Navigation**](<./Project2/>) - Localization, Navigation & Mapping
-- [**Project 3 - Forward Kinematics**](<./3-forward-kinematics/>) - Kinematics for a Robot Manipulator
+- [**Project 3 - Kinematics**](<./3-kinematics/>) - Kinematics for a Robot Manipulator
 - [**Project 4**](<./Project4/>) - Mobile Robotics & Manipulator Control
 - [**Project 5**](<./Project5/>) - Perception and Navigation
 
