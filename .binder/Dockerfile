@@ -59,7 +59,6 @@ RUN mkdir -p /home/${NB_USER}/catkin_ws/src && \
 # update ROS dependencies
 RUN apt-get update && \
     rosdep install --from-paths /home/${NB_USER}/catkin_ws/src --ignore-src -r -y && \
-    echo "source /home/${NB_USER}/catkin_ws/devel/setup.bash" >> ~/.bashrc && \
     apt-get clean && rm -rf /var/lib/apt/lists/*
 
 # Make sure the contents of our repo are in ${HOME}
@@ -67,7 +66,7 @@ RUN mkdir -p ${HOME}/work
 COPY . ${HOME}/work
 
 # install pip dependencies
-RUN pip install -r --no-cache-dir ${HOME}/work/requirements.txt && \
+RUN pip install --no-cache-dir -r ${HOME}/work/requirements.txt && \
     fix-permissions "${CONDA_DIR}" && \
     fix-permissions "/home/${NB_USER}"
 

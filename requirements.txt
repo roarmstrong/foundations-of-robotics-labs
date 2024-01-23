@@ -6,6 +6,7 @@ rise
 jupyros
 roslibpy
 tensorflow
+boto3
 jupyter-ai
 jupyterlab
 jupyterlab-zethus
