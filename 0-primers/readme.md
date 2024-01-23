@@ -1,4 +1,4 @@
-# Project0 - Primers on Python, the terminal, and ROS
+# Primers on Python, the terminal, and ROS
 
 ## Introduction
 

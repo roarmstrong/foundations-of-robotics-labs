@@ -1,7 +1,7 @@
 {
-    "name": "noetic ros-robot",
-    "dockerFile": "Dockerfile",
-    "remoteUser": "vscode",
+    "name": "robostack jupyter",
+    "dockerFile": "../.binder/Dockerfile",
+    "remoteUser": "jovyan",
     "context": "..",
     "containerEnv": {
         "DISPLAY": "${localEnv:DISPLAY}"
@@ -10,10 +10,9 @@
         "--privileged",
         "--network=host"
     ],
-    "workspaceMount": "source=${localWorkspaceFolder},target=/home/vscode/ws/${localWorkspaceFolderBasename},type=bind",
-    "workspaceFolder": "/home/vscode/ws/${localWorkspaceFolderBasename}",
+    "workspaceMount": "source=${localWorkspaceFolder},target=/home/jovyan/work/${localWorkspaceFolderBasename},type=bind",
+    "workspaceFolder": "/home/jovyan/work/${localWorkspaceFolderBasename}",
     "mounts": [
-        "source=${localEnv:HOME}${localEnv:USERPROFILE}/.bash_history,target=/home/vscode/.bash_history,type=bind"
-    ],
-    "postCreateCommand": "/bin/bash -c 'source /opt/ros/${ROS_DISTRO}/setup.bash && python3 -m venv .venv && source .venv/bin/activate && pip install -r requirements.txt'"
+        "source=${localEnv:HOME}${localEnv:USERPROFILE}/.bash_history,target=/home/jovyan/.bash_history,type=bind"
+    ]
 }
