@@ -2,7 +2,7 @@
 
 [![Binder](https://mybinder.org/badge_logo.svg)](<https://mybinder.org/v2/gh/AIResearchLab/foundations-of-robotics-labs/HEAD>)
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](<https://colab.research.google.com/github/AIResearchLab/foundations-of-robotics-labs>)
-[![vscode.dev](https://img.shields.io/badge/vscode-dev-blue)](<https://vscode.dev>)
+[![Open in Visual Studio Code](https://img.shields.io/badge/vscode-dev-blue)](https://open.vscode.dev/AIResearchLab/foundations-of-robotics-labs)
 
 These Python Jupyter notebooks are designed for academic teaching laboratories in robotics, using Gazebo for simulation up to physical deployment on robotic platforms. The students are not expected to install or deploy the required ROS workspace on their personal computer, but rather use lab resources at the university. The laboratories were designed at École de technologie supérieure, in Montréal, Canada, and adapted for the University of Canberra. Robotic platforms are available for the students to test their algorithms along with shared laptop stations.
 
